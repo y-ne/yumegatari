@@ -11,6 +11,8 @@ defmodule YumegatariWeb.Router do
     get "/", ApiController, :index
     get "/health", ApiController, :health
     get "/test", ApiController, :test
+
+    post "/proxy", ApiController, :proxy
   end
 
   # Enable LiveDashboard in development
